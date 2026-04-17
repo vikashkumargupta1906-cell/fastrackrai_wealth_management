@@ -74,7 +74,7 @@ const identifyHouseholdFromTranscript = async (transcript) => {
   `;
 
   const response = await anthropic.messages.create({
-    model: "claude-3-haiku-20240307", // Haiku is perfect (and very fast) for a simple extraction
+    model: "claude-sonnet-4-5", // Haiku is perfect (and very fast) for a simple extraction
     max_tokens: 50,
     temperature: 0,
     system: systemPrompt,
